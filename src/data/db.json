@@ -1,0 +1,104 @@
+{
+  "food": {
+    "follicular": {
+      "proteins": [
+        { "name": "Chicken", "image": "/photosapi/chicken.jpg" },
+        { "name": "Eggs", "image": "/photosapi/eggs.jpg" },
+        { "name": "Fish", "image": "/photosapi/fish.jpg" },
+        { "name": "Greek Yogurt", "image": "/photosapi/greekyoghurt.jpg" },
+        { "name": "Chickpeas", "image": "/photosapi/chickpeas.jpg" }
+      ],
+      "carbohydrates": [
+        { "name": "Oats", "image": "/photosapi/oats.jpg" },
+        { "name": "Quinoa", "image": "/photosapi/quinoa.jpg" },
+        { "name": "Sweet Potatoes", "image": "/photosapi/sweetpotatoes.jpg" }
+      ],
+      "vitamins": [
+        { "name": "Citrus", "image": "/photosapi/citrus.jpeg" },
+        { "name": "Oranges", "image": "/photosapi/oranges.jpg" },
+        { "name": "Bell Peppers", "image": "/photosapi/bellpeppers.jpg" },
+        { "name": "Broccoli", "image": "/photosapi/broccoli.jpg" },
+        { "name": "Leafy Greens", "image": "/photosapi/spinach.jpg" },
+        { "name": "Avocados", "image": "/photosapi/avocado.jpg" },
+        { "name": "Nuts", "image": "/photosapi/nuts.jpg" },
+        { "name": "Salad", "image": "/photosapi/salad.jpg" },
+        { "name": "Sunflower Seeds", "image": "/photosapi/sunflowerseeds.jpeg" }
+      ]
+    },
+    "ovulation": {
+      "proteins": [
+        { "name": "Salmon", "image": "/photosapi/salmon.jpg" },
+        { "name": "Chicken", "image": "/photosapi/chicken.jpg" },
+        { "name": "Tofu", "image": "/photosapi/tofu.jpg" },
+        { "name": "Cottage Cheese", "image": "/photosapi/cottagecheese.jpg" },
+        { "name": "Fish", "image": "/photosapi/fish.jpg" }
+      ],
+      "healthyfats": [
+        { "name": "Avocados", "image": "/photosapi/avocado.jpg" },
+        { "name": "Nuts", "image": "/photosapi/nuts.jpg" },
+        { "name": "Sunflower Seeds", "image": "/photosapi/sunflowerseeds.jpeg" },
+        { "name": "Pumpkin Seeds", "image": "/photosapi/pumpkinseeds.jpeg" },
+        { "name": "Olive Oil", "image": "/photosapi/oliveoil.jpg" },
+        { "name": "Chia Seeds", "image": "/photosapi/chiaseeds.jpg" }
+      ],
+      "vitamins": [
+        { "name": "Berries", "image": "/photosapi/berries.jpg" },
+        { "name": "Oranges", "image": "/photosapi/oranges.jpg" },
+        { "name": "Leafy Greens", "image": "/photosapi/spinach.jpg" },
+        { "name": "Watermelon", "image": "/photosapi/watermelon.jpeg" },
+        { "name": "Cucumber", "image": "/photosapi/cucumber.jpg" },
+        { "name": "Celery", "image": "/photosapi/celery.jpg" },
+        { "name": "Citrus", "image": "/photosapi/citrus.jpeg" }
+      ]
+    },
+    "luteal": {
+      "proteins": [
+        { "name": "Tofu", "image": "/photosapi/tofu.jpg" },
+        { "name": "Chickpeas", "image": "/photosapi/chickpeas.jpg" },
+        { "name": "Chicken", "image": "/photosapi/chicken.jpg" },
+        { "name": "Turkey", "image": "/photosapi/turkey.jpg" },
+        { "name": "Peanut Butter", "image": "/photosapi/peanutbutter.jpg" }
+      ],
+      "carbohydrates": [
+        { "name": "Whole Grain Bread", "image": "/photosapi/wholegrainbread.jpg" },
+        { "name": "Quinoa", "image": "/photosapi/quinoa.jpg" },
+        { "name": "Pasta", "image": "/photosapi/pasta.jpg" },
+        { "name": "Brown Rice", "image": "/photosapi/brownrice.jpg" },
+        { "name": "Sweet Potatoes", "image": "/photosapi/sweetpotatoes.jpg" },
+        { "name": "Pumpkins", "image": "/photosapi/pumpkin.jpg" }
+      ],
+      "vitamins": [
+        { "name": "Leafy Greens", "image": "/photosapi/spinach.jpg" },
+        { "name": "Avocado", "image": "/photosapi/avocado.jpg" },
+        { "name": "Bell Peppers", "image": "/photosapi/bellpeppers.jpg" },
+        { "name": "Dark Chocolate", "image": "/photosapi/darkchocolate.jpg" },
+        { "name": "Beets", "image": "/photosapi/beets.jpg" },
+        { "name": "Oranges", "image": "/photosapi/oranges.jpg" }
+      ]
+    },
+    "menstrual": {
+      "proteins": [
+        { "name": "Beef", "image": "/photosapi/beef.jpg" },
+        { "name": "Lentils", "image": "/photosapi/lentils.jpg" },
+        { "name": "Chicken", "image": "/photosapi/chicken.jpg" },
+        { "name": "Green Peas", "image": "/photosapi/greengrams.jpg" },
+        { "name": "Nuts", "image": "/photosapi/nuts.jpg" },
+        { "name": "Fish", "image": "/photosapi/fish.jpg" },
+        { "name": "Beans", "image": "/photosapi/beans.jpeg" },
+        { "name": "Tofu", "image": "/photosapi/tofu.jpg" }
+      ],
+      "carbohydrates": [
+        { "name": "Sweet Potatoes", "image": "/photosapi/sweetpotatoes.jpg" },
+        { "name": "Brown Rice", "image": "/photosapi/brownrice.jpg" },
+        { "name": "Pumpkin Soup", "image": "/photosapi/pumpkin.jpg" }
+      ],
+      "vitamins": [
+        { "name": "Leafy Greens", "image": "/photosapi/spinach.jpg" },
+        { "name": "Oranges", "image": "/photosapi/oranges.jpg" },
+        { "name": "Berries", "image": "/photosapi/berries.jpg" },
+        { "name": "Pineapple", "image": "/photosapi/pineapple.jpg" },
+        { "name": "Citrus Fruits", "image": "/photosapi/citrus.jpeg" }
+      ]
+    }
+  }
+}
