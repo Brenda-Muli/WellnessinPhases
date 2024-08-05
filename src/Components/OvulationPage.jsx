@@ -71,7 +71,7 @@ function OvulationPage() {
             <section>
               <h2 className="text-2xl font-semibold mb-4 text-[#622915]">Definition</h2>
               <p className="mb-8">
-                Ovulation is the second phase of the cycle. It is when your ovary releases a mature egg. The egg travels down the fallopian tube toward the uterus to be fertilized by sperm.
+              Ovulation phase is the third phase of the menstrual cycle, which occurs around day 14 in a 28-day cycle, although this timing can vary. Ovulation is triggered by a surge in luteinizing hormone (LH) from the pituitary gland, which causes the dominant follicle to release its mature egg from the ovary into the fallopian tube. This egg is then available for fertilization by sperm. Ovulation is a critical moment in the cycle, as it represents the peak fertility period for conception.
               </p>
             </section>
 
