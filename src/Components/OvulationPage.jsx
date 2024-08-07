@@ -1,5 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
 
 function OvulationPage() {
 //Use of useState to initialize category, currentcategory,currentindex and data
@@ -61,13 +83,13 @@ function OvulationPage() {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-gray-50 ">
+      <div className="min-h-screen bg-gray-50 pl-6 ">
         <header className="bg-[#E0C3B0] p-4 text-center">
           <h1 className="text-3xl font-bold text-[#622915]">Ovulation Phase</h1>
         </header>
 
         <main className="mt-8">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-4">
             <section>
               <h2 className="text-2xl font-semibold mb-4 text-[#622915]">Definition</h2>
               <p className="mb-8">
@@ -181,7 +203,144 @@ function OvulationPage() {
               ) : (
                 <p className="text-center text-lg text-[#622915]">Select a category to view suggestions.</p>
               )}
+            <br/> <br/> <br/>
+            </section >
+
+            <br/> <br/> 
+
+            <section className='mx-6'>
+            <h2 className='text-2xl font-semibold mb-4 text-[#622915]' >Cycle-Based Recipes</h2>
+            <p>Try out these recipes that complement your heightened energy and social vibrancy. The ovulatory phase is a great time to enjoy fresh, light meals that support your metabolism and overall well-being.</p>
+            <br />
+            <Carousel responsive={responsive}>
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/stuffedbp.JPG"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Stuffed Bell peppers</h2>
+                <a
+                  href="https://www.budgetbytes.com/stuffed-bell-peppers/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/tacos.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Tacos</h2>
+                <a
+                  href="https://feelgoodfoodie.net/recipe/ground-beef-tacos-napa-cabbage-guacamole/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/lambfry.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Lamb and Brussels Sprouts Stir-Fry</h2>
+                <a
+                  href="https://the-good-plate.com/brussels-sprouts-stir-fry/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/salmonspinach.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Salmon and Spinach Salad</h2>
+                <a
+                  href="https://www.food.com/recipe/spinach-salad-with-salmon-499375"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/chickenwrap.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Chicken wrap</h2>
+                <a
+                  href="https://www.simplejoy.com/chicken-wrap/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/strawberries.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Strawberries dipped in chocolate</h2>
+                <a
+                  href="https://tastesbetterfromscratch.com/gourmet-chocolate-covered-strawberries/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+            </Carousel>
             </section>
+            <br />
           </div>
         </main>
       </div>

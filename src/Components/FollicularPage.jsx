@@ -1,5 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
 
 function FollicularPage() {
 //Use of useState to initialize category, currentcategory,currentindex and data
@@ -61,13 +83,13 @@ function FollicularPage() {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-gray-50 ">
+      <div className="min-h-screen bg-gray-50 pl-6 ">
         <header className="bg-[#E0C3B0] p-4 text-center">
           <h1 className="text-3xl font-bold text-[#622915]">Follicular Phase</h1>
         </header>
 
         <main className="mt-8">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-4">
             <section>
               <h2 className="text-2xl font-semibold mb-4 text-[#622915]">Definition</h2>
               <p className="mb-8">
@@ -178,7 +200,146 @@ function FollicularPage() {
               ) : (
                 <p className="text-center text-lg text-[#622915]">Select a category to view suggestions.</p>
               )}
+            <br/> <br/> <br/>
             </section>
+
+            <br/> <br/>
+
+            <section className='mx-6'>
+            <h2 className='text-2xl font-semibold mb-4 text-[#622915]' >Cycle-Based Recipes</h2>
+            <p> Try out these recipes designed to boost energy and support your body as it prepares for ovulation. Focusing on nutrient-dense foods rich in vitamins and minerals to enhance your vitality and promote a balanced mood. </p>
+
+            <br />
+            <Carousel responsive={responsive}>
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/qunioasalad.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Quinoa salad</h2>
+                <a
+                  href="https://www.loveandlemons.com/quinoa-salad-recipe/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/berrysmoothie.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Berry smoothie</h2>
+                <a
+                  href="https://www.dinneratthezoo.com/mixed-berry-smoothie/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/chickpeassalad.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Chickpea Salad</h2>
+                <a
+                  href="https://cookingwithayeh.com/chickpea-avocado-salad/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/tofufry.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Tofu stir fry</h2>
+                <a
+                  href="https://www.wellplated.com/three-pea-ginger-tofu-stir-fry/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/tsandwich.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Turkey sandwich</h2>
+                <a
+                  href="https://www.favfamilyrecipes.com/turkey-sandwich/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/cs.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Chicken avocado wrap</h2>
+                <a
+                  href="https://www.simplejoy.com/chicken-wrap/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            </Carousel>
+            </section>
+            <br />
           </div>
         </main>
       </div>

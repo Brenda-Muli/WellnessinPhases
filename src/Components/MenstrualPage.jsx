@@ -1,7 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
-function FollicularPage() {
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
+
+function MenstrualPage() {
 //Use of useState to initialize category, currentcategory,currentindex and data
   const [category, setCategory] = useState([]);
   const [currentCategory, setCurrentCategory] = useState(null);
@@ -61,13 +83,13 @@ function FollicularPage() {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-gray-50 ">
-        <header className="bg-[#E0C3B0] p-4 text-center">
+      <div className="min-h-screen bg-gray-50 pl-6 ">
+        <header className="bg-[#E0C3B0]  p-4 text-center ">
           <h1 className="text-3xl font-bold text-[#622915]">Menstrual Phase</h1>
         </header>
 
         <main className="mt-8">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-4">
             <section>
               <h2 className="text-2xl font-semibold mb-4 text-[#622915]">Definition</h2>
               <p className="mb-8">
@@ -182,12 +204,128 @@ function FollicularPage() {
               ) : (
                 <p className="text-center text-lg text-[#622915]">Select a category to view suggestions.</p>
               )}
+              <br /><br /><br />
+            </section>
+
+            <br /><br />
+            
+            <section className='mx-6'>
+            <h2 className='text-2xl font-semibold mb-4 text-[#622915]' >Cycle-Based Recipes</h2>
+            <p>Try out these recipes that offer comfort and help alleviate cramps or fatigue. Prioritizing nutrient-rich and hydrating foods that can soothe and support your body through menstruation.</p>
+            <br />
+            <Carousel responsive={responsive}>
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/beefsoup.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Beef and vegetable soup</h2>
+                <a
+                  href="https://www.cookingclassy.com/vegetable-beef-soup/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/vegetablebroth.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Vegetable broth with noodles</h2>
+                <a
+                  href="https://cookingwithayeh.com/vegetable-noodle-soup/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/sweetpotatoesfry.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Salmon and spinach fry</h2>
+                <a
+                  href="https://wildalaskancompany.com/blog/sheet-pan-salmon-with-maple-roasted-sweet-potatoes-and-wilted-spinach"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/chickenfry.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Chicken vegetables stir fry</h2>
+                <a
+                  href="https://vjcooks.com/chicken-stirfry/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+
+            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src="/photos/toast.jpg"
+                  alt="imageone"
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              <div className = "text-center mt-4">
+                <h2 className = "text-2xl font-bold text-[#622915]">Eggs and avocado toast</h2>
+                <a
+                  href="https://www.inspiredtaste.net/23087/easy-avocado-egg-salad-recipe/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+                >
+                  Read Recipe
+                </a>
+              </div>
+            </div>
+            </Carousel>
             </section>
           </div>
+          <br/>
         </main>
       </div>
     </>
   );
 }
 
-export default FollicularPage;
+export default MenstrualPage;

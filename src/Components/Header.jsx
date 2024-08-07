@@ -33,7 +33,7 @@ function Header() {
     };
 
     return (
-        <nav className="bg-[#EOC3BO] p-4 flex justify-between items-center">
+        <nav className=" bg-[#EOC3BO] p-4 flex justify-between items-center">
             <ul className="flex space-x-4">
                 <li><Link to="/" className="text-[#622915] font-bold hover:text-[#9A3F06]">HOME</Link></li>
                 <li>

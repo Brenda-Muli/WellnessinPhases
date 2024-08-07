@@ -12,11 +12,11 @@ function HomePage(){
     <div className="bg-white text-[#622915] font-sans">
         <Header/>
 
-        <section className="relative m-0 p-0">
+        <section className="relative m-0 p-0 h-[80vh] overflow-hidden">
             <img
                 src="/photos/SampleTwo.png"
                 alt="Description"
-                className="w-full h-auto max-h-[80vh] object-cover"
+                className="absolute inset-0 w-full h-full object-cover"
             />
             
         <div className="absolute inset-0 flex items-center justify-end p-4 bg-gradient-to-t from-white/30 via-transparent to-transparent">
@@ -29,14 +29,14 @@ function HomePage(){
         <section className="">
             <div className=" p-6  mr-4">
                 <h2 className="text-2xl font-semibold text-[#8134OF] mb-4">Wellness in Phases</h2>
-                <p className="text-base leading-relaxed">Hey There! Understanding your menstrual cycle is essential for feeling your best, and we’re here to make it simple and straightforward for you. Our goal is to provide you with clear, accessible information so you can manage your menstrual health with confidence. We also provide expert tips on food and nutrition tailored to each phase of your menstrual cycle to help you feel your best throughout the month. We’re here to support you on your journey with confidence and care. Let’s navigate this together with positivity and a focus on holistic well-being! </p>
+                <p className="text-base leading-relaxed text-black">Hey There! Understanding your menstrual cycle is essential for feeling your best, and we’re here to make it simple and straightforward for you. Our goal is to provide you with clear, accessible information so you can manage your menstrual health with confidence. We also provide expert tips on food and nutrition tailored to each phase of your menstrual cycle to help you feel your best throughout the month. We’re here to support you on your journey with confidence and care. Let’s navigate this together with positivity and a focus on holistic well-being! </p>
             </div>
         </section>
 
         <section className="flex justify-between p-8">
-            <div className="  w-1/2 ">
+            <div className=" ">
                 <h2 className="text-xl font-semibold text-[#8134OF] mb-4">Importance of tracking your menstrual cycle</h2>
-                <ul className="list-disc">
+                <ul className="list-disc text-black">
                     <li>Predict Your Periods: Knowing your cycle length helps you anticipate when your next period will start, allowing you to plan ahead and manage your schedule.</li>
                     <br />
                     <li>Manage PMS Symptoms: Tracking your cycle can reveal patterns in PMS symptoms, helping you manage and mitigate them with targeted strategies.</li>
@@ -45,24 +45,14 @@ function HomePage(){
                     <br />
                     <li>Understand Your Body: Your menstrual cycle can tell you a lot about your healthcare. When you keep track of your cycle and how you feel in each phase you can easily notice irregularities or changes that need attention. </li>
                 </ul>
-            </div>
-            <div className="bg-[#F4E1D2] border border-[#B6764D] rounded p-6 w-1/2 h-1/24 ml-16 mr-20 justify-right">
-            <img
-                src="/photos/sectiontwo.jpg" 
-                alt="Description"
-                className="w-1/2 h-1/24 mb-4 rounded-lg"
-             />
-            <p className="text-sm text-gray-700 mb-4">
-                Discover the benefits of tracking your menstrual cycle with this comprehensive guide. Learn how understanding your cycle can improve your health and well-being.
-            </p>
-            <a
+                <a
                 href="https://www.hsph.harvard.edu/applewomenshealthstudy/learn-more/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#B6764D] hover:underline"
                 >
                 Read More
-            </a>
+                </a>
             </div>
         </section>
 
