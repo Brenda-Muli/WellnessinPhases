@@ -2,10 +2,10 @@
 
 import React from 'react'
 
-function ContactExpertPage () {
+function ContactUs() {
   return (
     <div>ContactExpertPage</div>
   )
 }
 
-export default ContactExpertPage;
+export default ContactUs;

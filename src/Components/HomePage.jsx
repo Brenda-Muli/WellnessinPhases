@@ -37,13 +37,13 @@ function HomePage(){
             <div className=" ">
                 <h2 className="text-xl font-semibold text-[#8134OF] mb-4">Importance of tracking your menstrual cycle</h2>
                 <ul className="list-disc text-black">
-                    <li>Predict Your Periods: Knowing your cycle length helps you anticipate when your next period will start, allowing you to plan ahead and manage your schedule.</li>
+                    <li> <b>Predict Your Periods</b> : Knowing your cycle length helps you anticipate when your next period will start, allowing you to plan ahead and manage your schedule.</li>
                     <br />
-                    <li>Manage PMS Symptoms: Tracking your cycle can reveal patterns in PMS symptoms, helping you manage and mitigate them with targeted strategies.</li>
+                    <li><b>Manage PMS Symptoms</b> : Tracking your cycle can reveal patterns in PMS symptoms, helping you manage and mitigate them with targeted strategies.</li>
                     <br />
-                    <li> Identify Patterns: Regular tracking helps detect irregularities or changes in your cycle, which can be useful for identifying underlying health issues or making informed decisions with your healthcare provider.</li>
+                    <li> <b>Identify Patterns </b> : Regular tracking helps detect irregularities or changes in your cycle, which can be useful for identifying underlying health issues or making informed decisions with your healthcare provider.</li>
                     <br />
-                    <li>Understand Your Body: Your menstrual cycle can tell you a lot about your healthcare. When you keep track of your cycle and how you feel in each phase you can easily notice irregularities or changes that need attention. </li>
+                    <li> <b>Understand Your Body </b> : Your menstrual cycle can tell you a lot about your healthcare. When you keep track of your cycle and how you feel in each phase you can easily notice irregularities or changes that need attention. </li>
                 </ul>
                 <a
                 href="https://www.hsph.harvard.edu/applewomenshealthstudy/learn-more/" 
@@ -52,6 +52,31 @@ function HomePage(){
                 className="text-[#B6764D] hover:underline"
                 >
                 Read More
+                </a>
+            </div>
+        </section>
+            <br />
+        <section className="flex justify-between p-8">
+                <div className=" ">
+                    <h2 className="text-xl font-semibold text-[#8134OF] mb-4">When should you see a doctor?</h2>
+                    <ul className="list-disc text-black">
+                    <li><b>Heavy Bleeding (Menorrhagia)</b> : If you need to change sanitary products every hour or two, or if your bleeding lasts longer than 7 days, it could indicate an underlying health issue like fibroids or hormonal imbalances.</li>
+                    <br />
+                    <li> <b>Severe Pain (Dysmenorrhea)</b> : Experiencing intense menstrual cramps that interfere with daily activities may suggest conditions such as endometriosis, adenomyosis, or pelvic inflammatory disease.</li>
+                    <br />
+                    <li> <b>Irregular Periods:</b> : If your menstrual cycle is consistently shorter than 21 days or longer than 35 days, or if you frequently miss periods, it might be due to hormonal imbalances, thyroid issues, or polycystic ovary syndrome (PCOS).</li>
+                    <br />
+                    <li> <b> Absence of Periods (Amenorrhea):</b> : If you miss periods for three consecutive cycles or more, and you’re not pregnant, it could be a sign of underlying health issues like PCOS, significant weight loss or gain, or excessive exercise. </li>
+                    <br />
+                    <li> <b>Changes in Bowel or Bladder Habits:</b> : Experiencing significant changes in bowel or bladder habits during your period, such as pain during urination or bowel movements, could be a sign of endometriosis or other pelvic conditions. </li>
+                </ul>
+                <a
+                    href="https://www.vezeeta.co.ke/en/doctor/gynaecology-and-infertility/kenya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#B6764D] hover:underline"
+                >
+                    Book appointment with a doctor
                 </a>
             </div>
         </section>
