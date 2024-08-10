@@ -26,7 +26,6 @@ function ContactUs({ contactFormRef }) {
 
   return (
     <div ref={contactFormRef} className="flex flex-col max-w-6xl mx-4">
-      {/* Text Content */}
       <div className="w-full  mb-6">
         <div
           ref={paragraphInViewRef}
@@ -40,14 +39,14 @@ function ContactUs({ contactFormRef }) {
         </div>
       </div>
 
-      {/* Contact Form */}
+   
       <div className="w-full max-w-3xl">
       <form
           ref={form}
           onSubmit={sendEmail}
           className="bg-[] p-6 rounded-lg shadow-lg space-y-4 w-full"
         >
-          {/* Name Fields */}
+
           <div className="flex gap-4 mb-4">
             <div className="flex-1">
               <label className="block text-white font-medium">First Name</label>
@@ -71,7 +70,6 @@ function ContactUs({ contactFormRef }) {
             </div>
           </div>
 
-          {/* Email Field */}
           <div className="mb-4">
             <label className="block text-white font-medium">Email</label>
             <input
@@ -83,7 +81,7 @@ function ContactUs({ contactFormRef }) {
             />
           </div>
 
-          {/* Message Field */}
+      
           <div className="mb-4">
             <label className="block text-white font-medium">Message</label>
             <textarea

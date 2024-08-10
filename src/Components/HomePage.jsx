@@ -5,8 +5,6 @@ import ContactUs from './ContactUs';
 import Testimonials from './Testimonials';
 import ArticleFeature from './ArticleFeature';
 
-
-
 function HomePage(){
     
     const contactFormRef = useRef(null);
@@ -16,7 +14,6 @@ function HomePage(){
         }
       };
        
-
     return (
     <>
     <div className="bg-white text-black font-sans">
@@ -98,8 +95,8 @@ function HomePage(){
                 <ArticleFeature/>
             </div>
         </section>
-        
         </div>
+        
         <br /> <br/> 
         <Testimonials/>
         <br /> <br/> 

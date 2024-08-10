@@ -2,8 +2,10 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 function Footer (){
+//Initializing of useState
   const [showSubMenu, setShowSubMenu] = useState(false);
 
+ //Manage visibility of the sub-menu
   const handleMenstrualPhasesClick = (e) => {
     e.preventDefault();
     setShowSubMenu(!showSubMenu);

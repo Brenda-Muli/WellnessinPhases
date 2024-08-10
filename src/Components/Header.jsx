@@ -2,15 +2,23 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Header({ scrollToContactForm }) {
-    const [showSubMenu, setShowSubMenu] = useState(false);
+
+    const [showSubMenu, setShowSubMenu] = useState({ menstrual: false, articles: false });
     const [query, setQuery] = useState('');
     const navigate = useNavigate();
 
-    const handleMenstrualPhaseClick = (event) => {
+// Function to display sub-menu
+    const handleMenuClick = (menu) => (event) => {
         event.preventDefault();
-        setShowSubMenu(!showSubMenu);
-    };
 
+// Toggle the visibility of the submenu
+        setShowSubMenu(prevState => ({
+            ...prevState,
+            [menu]: !prevState[menu]
+        }));
+    };
+    
+// Function to handle form submissions for search
     const handleSearch = (e) => {
         e.preventDefault();
         const lowerCaseQuery = query.toLowerCase();
@@ -35,12 +43,12 @@ function Header({ scrollToContactForm }) {
                 <li>
                     <a 
                         href="/menstrual-phases" 
-                        onClick={handleMenstrualPhaseClick} 
+                        onClick={handleMenuClick('menstrual')} 
                         className="text-[#622915] font-bold hover:text-[#9A3F06]"
                     >
                         MENSTRUAL PHASE
                     </a>
-                    {showSubMenu && (
+                    {showSubMenu.menstrual && (
                         <ul className="pl-4 mt-2">
                             <li><Link to="/menstrual-phases/follicular" className="text-[#622915] font-bold hover:text-[#9A3F06]">Follicular Phase</Link></li>
                             <li><Link to="/menstrual-phases/ovulation" className="text-[#622915] font-bold hover:text-[#9A3F06]">Ovulation Phase</Link></li>
@@ -49,7 +57,23 @@ function Header({ scrollToContactForm }) {
                         </ul>
                     )}
                 </li>
-                <li><Link to="/articles" className="text-[#622915] font-bold hover:text-[#9A3F06]">ARTICLES</Link></li>
+                <li>
+                    <a 
+                        href="/articles" 
+                        onClick={handleMenuClick('articles')} 
+                        className="text-[#622915] font-bold hover:text-[#9A3F06]"
+                    >
+                        ARTICLES
+                    </a>
+                    {showSubMenu.articles && (
+                        <ul className="pl-4 mt-2">
+                            <li><Link to="/articles/endometriosis" className="text-[#622915] font-bold hover:text-[#9A3F06]">Endometriosis</Link></li>
+                            <li><Link to="/articles/menopause" className="text-[#622915] font-bold hover:text-[#9A3F06]">Menopause</Link></li>
+                            <li><Link to="/articles/menstrualcup" className="text-[#622915] font-bold hover:text-[#9A3F06]">Menstrual Cup</Link></li>
+                            <li><Link to="/articles/periodmyths" className="text-[#622915] font-bold hover:text-[#9A3F06]">Period Myths</Link></li>
+                        </ul>
+                    )}
+                </li>
                 <li>
                     <a
                         href="#contact-form"
@@ -81,6 +105,6 @@ function Header({ scrollToContactForm }) {
             </form>
         </nav>
     );
-};
+}
 
 export default Header;

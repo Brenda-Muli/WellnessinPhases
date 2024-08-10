@@ -2,7 +2,6 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -22,95 +21,88 @@ const responsive = {
   }
 };
 
-function ArticleFeature(){
-  return(
+function ArticleFeature() {
+  return (
     <>
-    <Carousel responsive={responsive}>
-    <div className=" rounded-lg shadow-lg max-w-sm mx-4">
-              <div className="relative overflow-hidden rounded-lg">
-                <img
-                  src="/photos/Periodmyths.png"
-                  alt="imageone"
-                  className="w-full h-64 object-cover rounded-lg"
-                />
-              </div>
-              <div className = "text-center mt-4">
-                <h2 className = "text-2xl font-bold text-[#622915]">What are period myths?</h2>
-                <a
-                  href="https://www.budgetbytes.com/stuffed-bell-peppers/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
-                >
-                  Read more
-                </a>
-              </div>
-            </div>
+      <Carousel responsive={responsive}>
+        <div className="rounded-lg shadow-lg max-w-sm mx-4">
+          <div className="relative overflow-hidden rounded-lg">
+            <img
+              src="/photos/Periodmyths.png"
+              alt="Period Myths"
+              className="w-full h-64 object-cover rounded-lg"
+            />
+          </div>
+          <div className="text-center mt-4">
+            <h2 className="text-2xl font-bold text-[#622915]">What are period myths?</h2>
+            <a
+              href="/articles/periodmyths"
+              className="text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+            >
+              Read more
+            </a>
+          </div>
+        </div>
 
-            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
-              <div className="relative overflow-hidden rounded-lg">
-                <img
-                  src="/photos/Menopause.png"
-                  alt="imageone"
-                  className="w-full h-64 object-cover rounded-lg"
-                />
-              </div>
-              <div className = "text-center mt-4">
-                <h2 className = "text-2xl font-bold text-[#622915]">What is menopause?</h2>
-                <a
-                  href="https://www.budgetbytes.com/stuffed-bell-peppers/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
-                >
-                  Read more
-                </a>
-              </div>
-            </div>
-            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
-              <div className="relative overflow-hidden rounded-lg">
-                <img
-                  src="/photos/endometriosis.png"
-                  alt="imageone"
-                  className="w-full h-64 object-cover rounded-lg"
-                />
-              </div>
-              <div className = "text-center mt-4">
-                <h2 className = "text-2xl font-bold text-[#622915]">What are period myths?</h2>
-                <a
-                  href="https://www.budgetbytes.com/stuffed-bell-peppers/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
-                >
-                  Read more
-                </a>
-              </div>
-            </div>
+        <div className="rounded-lg shadow-lg max-w-sm mx-4">
+          <div className="relative overflow-hidden rounded-lg">
+            <img
+              src="/photos/Menopause.png"
+              alt="Menopause"
+              className="w-full h-64 object-cover rounded-lg"
+            />
+          </div>
+          <div className="text-center mt-4">
+            <h2 className="text-2xl font-bold text-[#622915]">What is menopause?</h2>
+            <a
+              href="/articles/menopause"
+              className="text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+            >
+              Read more
+            </a>
+          </div>
+        </div>
 
-            <div className=" rounded-lg shadow-lg max-w-sm mx-4">
-              <div className="relative overflow-hidden rounded-lg">
-                <img
-                  src="/photos/MenstrualCups.png"
-                  alt="imageone"
-                  className="w-full h-64 object-cover rounded-lg"
-                />
-              </div>
-              <div className = "text-center mt-4">
-                <h2 className = "text-2xl font-bold text-[#622915]">What are menstrual cups?</h2>
-                <a
-                  href="https://www.budgetbytes.com/stuffed-bell-peppers/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className = "text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
-                >
-                  Read more
-                </a>
-              </div>
-            </div>
-    </Carousel>
+        <div className="rounded-lg shadow-lg max-w-sm mx-4">
+          <div className="relative overflow-hidden rounded-lg">
+            <img
+              src="/photos/endometriosis.png"
+              alt="Endometriosis"
+              className="w-full h-64 object-cover rounded-lg"
+            />
+          </div>
+          <div className="text-center mt-4">
+            <h2 className="text-2xl font-bold text-[#622915]">What is endometriosis?</h2>
+            <a
+              href="/articles/endometriosis"
+              className="text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+            >
+              Read more
+            </a>
+          </div>
+        </div>
+
+        <div className="rounded-lg shadow-lg max-w-sm mx-4">
+          <div className="relative overflow-hidden rounded-lg">
+            <img
+              src="/photos/MenstrualCups.png"
+              alt="Menstrual Cups"
+              className="w-full h-64 object-cover rounded-lg"
+            />
+          </div>
+          <div className="text-center mt-4">
+            <h2 className="text-2xl font-bold text-[#622915]">What are menstrual cups?</h2>
+            <a
+              href="/articles/menstrualcup"
+              className="text-lg text-[#9A3F06] mt-2 inline-block hover:underline"
+            >
+              Read more
+            </a>
+          </div>
+        </div>
+      </Carousel>
     </>
-  )
+  );
 }
 
 export default ArticleFeature;

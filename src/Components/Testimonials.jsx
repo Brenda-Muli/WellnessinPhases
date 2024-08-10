@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Array containing testimonial data
 const testimonialList = [
   [
     {
@@ -43,6 +44,7 @@ const testimonialList = [
   ],
 ];
 
+// SVG shape
 const ShapeOne = (
   <svg
     className="absolute bottom-0 left-0 -z-[1] w-[404px] h-[572px]"
@@ -79,8 +81,11 @@ const ShapeTwo = (
 );
 
 function Testimonials (){
+
+// State to manage the index of the currently displayed testimonial 
   const [index, setIndex] = useState(0);
 
+ // Function to update the index of the displayed testimonial
   const handleSelect = (selectedIndex) => setIndex(selectedIndex);
 
   return (

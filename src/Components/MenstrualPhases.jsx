@@ -5,7 +5,7 @@ import OvulationPage from './OvulationPage';
 import LutealPage from './LutealPage';
 import MenstrualPage from './MenstrualPage';
 
-const MenstrualPhases = () => {
+function MenstrualPhases(){
     const { phase } = useParams();
 
     let content;
